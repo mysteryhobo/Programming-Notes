@@ -1,6 +1,8 @@
 # HTTP
 
-### Codes:
+![https://cascadingmedia.com/assets/images/insites/2015/02/url-anatomy/url-anatomy-55598c24.png](https://cascadingmedia.com/assets/images/insites/2015/02/url-anatomy/url-anatomy-55598c24.png)
+
+### Response Codes:
 
 - 100: Info
 - 200: Success
@@ -20,6 +22,12 @@
     - 404: Not found
 - 500: Server Error
     - 501: Not implemented
+
+### HTTPS:
+
+- Encrypted body
+- Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL)
+- private and public key system
 
 ### Headers:
 
@@ -42,7 +50,7 @@
 ### **Cors: Cross Origin Resource Sharing**
 
 - Security measure enforced by browsers to restrict Requests of data to a server from a different origin
-- sent in the headers with the webpage
+- Sent in the headers with the webpage
 - Not an issue of the web page and the api come from the same server (the same origin)
 - But a website may opt-in to making requests from api that are not its origin
 - Headers are sent to the client stating what it may access.
