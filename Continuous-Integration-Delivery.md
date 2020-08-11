@@ -1,4 +1,4 @@
-# CI / CD
+# Continuous Integration / Delivery
 
 The process for continuously integrating new code into a shared code base and deploying it on a regular basis.
 
@@ -30,7 +30,7 @@ Octopus is responsible for
 
 ![https://blog.jetbrains.com/wp-content/uploads/2015/11/teamcity-octopus_post2.png](https://blog.jetbrains.com/wp-content/uploads/2015/11/teamcity-octopus_post2.png)
 
-typical **Process:**
+Typical **Process:**
 
 - Pull Master, Create Branch and write code locally
 - Pull Master and merge with branch when done and run tests to makes sure nothing broke in merging process
@@ -40,3 +40,4 @@ typical **Process:**
 - The tester would then merge the branch to master and that would trigger TeamCity to create a build and run tests again
 - Octopus would then handle releases and deployments to the different environments
     - env variables were maintained in octopus to avoid exposing them in git
+- Terraform for creating configurations for cloud infrastructure that can be interpreted by Octopus
